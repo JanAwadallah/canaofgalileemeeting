@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrab</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+    <!-- <script src="jquery-3.3.1.min.js"></script> -->
+
+
+</head>
+<body>
+
+
+ 
+     
+                <!-- <img class="fade-scroll" src="images\NeverStop.png"> -->
+            
+          
+        <div id="header" class="fade-scroll">
+            <h1 id="first" class="fade-scroll">Never Stop Services</h1>
+            <h2 id="h2top" class="fade-scroll">Commercial, Industrial and Domestic</h2>
+            <p id="top">
+                    Let's keep your business spotless! <br>Reliable and affordable service
+                    <br><i class="fas fa-mobile-alt">  0404532657 / 0432538873</i>
+
+                    <div class="center"><a class="btn btn-lg btn-primary" href="#">Get your Free Qoute</a></div>
+                    <div class="center"><a class="btn btn-lg btn-primary" href="contact-us.html">Contact Us</a></div>
+
+
+            </p>
+            
+        </div>
+        <div class="page-header"><h1>About Us</h1></div>
+        <div class="container fade-scroll" style="background: rgba(17, 17, 17, 0.2); padding: 25px; border-radius: 10px;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 fade-scroll">
+                    <img src="cleaner1.png">
+                        <p>
+                                <h3>A Cleaner Environment</h3>
+                                We offer cleaning services for schools, churches, medical facilities,
+                                 office buildings, and more. We customize our services to meet your specific needs. 
+                                 Ask us about daily, weekly, and bi-weekly weekly service. Contracts welcome. 
+                                 Call for a free quote. 
+                        </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 fade-scroll">
+                        <img src="cleaner2.png">
+                        <p style="text-align: center;">
+                                <h3>What we offer</h3>
+                                Some of our services include:
+                            <ul id="list">
+                                <li>Cleaning and sanitizing restrooms</li>
+                                <li>Sweeping, mopping, and vacuuming floors</li>
+                                <li>Carpet cleaning (ask)</li>
+                                <li>Hardwood floor care</li>
+                                <li>Power washing</li>
+                                <li>Biohazard cleanup</li> 
+                            </ul>
+                        </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 fade-scroll">
+                        <img src="cleaner3.png">
+                        <p>
+                                <h3>Your Business is Ours</h3>
+                                We promise quality, reliable cleaning service every time so our loyal customers feel special. We work hard to be the best. Our products are high-quality and safe. And we focus on the details, so you have a clean, orderly office every time. 
+                        </p>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="page-header"><h1>Contact Us</h1></div>
+        <div class="container fade-scroll" style="font-size: 1.4em; text-align: center; background: rgba(17, 17, 17, 0.2); padding: 25px; border-radius: 10px;">
+
+        <h2>Questions or Comments?</h2>
+<p>
+We understand that every commercial situation has unique cleaning needs. Feel free to message or call us with any specifics.
+
+
+
+Your time is valuable, and we will make sure to get back to you as soon as we can.
+
+
+
+<br>Thanks!
+
+<br><strong>Never Stop Services</strong>
+<br><strong>Melbourne, Victoria, Australia
+</strong>
+<br><strong><i class="fas fa-mobile-alt"></i> 0404532657 / 0403005327</strong>
+
+                   
+</p>
+<a class="mx-auto btn btn-lg btn-primary" style="width: 200px;" href="#">Get your Free Qoute</a></div>
+
+        </div>
+</div>
+<div class="page-footer">
+    <hr>
+    <h4>Copyright © 2018 Never Stop Services - All Rights Reserved.</h4>
+</div>
+           
+           
+    
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(function() {
+            
+            var documentEl = $(document),
+                fadeElem = $('.fade-scroll');
+            
+            
+            documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+                
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/500);
+                }); 
+            });
+            
+        });
+    
+    </script>
+    <script
+  src="https://code.jquery.com/jquery-2.1.3.min.js"
+  integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM="
+  crossorigin="anonymous"></script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+</body>
+</html>
