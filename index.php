@@ -2,7 +2,7 @@
 
 
 <?php
-//  include 'header.php';
+ include 'header.php';
 // /* Database connection start */
 //  include 'connection.php';
 // $conn = mysqli_connect($servername, $username, $password, $dbname) or die("Connection failed: " . mysqli_connect_error());
