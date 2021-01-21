@@ -2,37 +2,37 @@
 
 
 <?php
- include 'header.php';
-/* Database connection start */
- include 'connection.php';
-$conn = mysqli_connect($servername, $username, $password, $dbname) or die("Connection failed: " . mysqli_connect_error());
-if (mysqli_connect_errno()) {
-    printf("Connect failed: %s\n", mysqli_connect_error());
-    exit();
-}
+//  include 'header.php';
+// /* Database connection start */
+//  include 'connection.php';
+// $conn = mysqli_connect($servername, $username, $password, $dbname) or die("Connection failed: " . mysqli_connect_error());
+// if (mysqli_connect_errno()) {
+//     printf("Connect failed: %s\n", mysqli_connect_error());
+//     exit();
+// }
 
-$sql = "SELECT * FROM  images";
-$resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
-$image_count = 0;
-$button_html = '';		
-$slider_html = '';	
-while( $rows = mysqli_fetch_assoc($resultset)){	
-	$active_class = "";			
-	if(!$image_count) {
-		$active_class = 'active';					
-		$image_count = 1;
-	}	
-	$image_count++;
-	$thumb_image = "nature_thumb_".$rows['id'].".jpg";	
-	// slider image html
-	$slider_html.= "<div class='carousel-item ".$active_class."'>";
-    $slider_html.= "<img src='img/".$rows['image']."' alt='1.jpg' class='d-block rounded z-depth'>";
+// $sql = "SELECT * FROM  images";
+// $resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));
+// $image_count = 0;
+// $button_html = '';		
+// $slider_html = '';	
+// while( $rows = mysqli_fetch_assoc($resultset)){	
+// 	$active_class = "";			
+// 	if(!$image_count) {
+// 		$active_class = 'active';					
+// 		$image_count = 1;
+// 	}	
+// 	$image_count++;
+// 	$thumb_image = "nature_thumb_".$rows['id'].".jpg";	
+// 	// slider image html
+// 	$slider_html.= "<div class='carousel-item ".$active_class."'>";
+//     $slider_html.= "<img src='img/".$rows['image']."' alt='1.jpg' class='d-block rounded z-depth'>";
     
-    $slider_html.= "<div class='carousel-caption d-none d-md-block'><h5>".$rows['Caption']."</h5></div></div>";
-    // Thumbnail html
-	// Button html
-	$button_html.= "<li data-target='#carousel-example-generic' data-slide-to='".$image_count."' class='".$active_class."'></li>";
-}
+//     $slider_html.= "<div class='carousel-caption d-none d-md-block'><h5>".$rows['Caption']."</h5></div></div>";
+//     // Thumbnail html
+// 	// Button html
+// 	$button_html.= "<li data-target='#carousel-example-generic' data-slide-to='".$image_count."' class='".$active_class."'></li>";
+// }
 ?>
 
 
