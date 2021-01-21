@@ -36,7 +36,7 @@
 ?>
 
 
-<div class="container-fluid p-2">	
+<!-- <div class="container-fluid p-2">	
 		
 	<div id="carousel-example-generic " class="carousel slide" data-ride="carousel" >	  
 		<ol class="carousel-indicators">
@@ -64,7 +64,7 @@
 		</ul>
 	</div>	
 
-</div>
+</div> -->
 <div class="container">
 <div class="center d-flex flex-row justify-content-around">
     <!--<div class="col-12 col-md-6 col-sm-12 col-lg-3">-->
